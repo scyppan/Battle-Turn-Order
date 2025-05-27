@@ -1,3 +1,5 @@
+window.orderPanel=null;
+
 function createOrderPanel(mountPoint = document.body) {
   if (window.orderPanel) return window.orderPanel;
   const panel = document.createElement('div');

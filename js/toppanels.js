@@ -46,8 +46,8 @@ function initBattlePanels(mountPoint = document.body) {
     const q = search.value.trim().toLowerCase();
     const filtered = q
       ? data.filter(it =>
-          (it.meta.name || it.name).toLowerCase().includes(q)
-        )
+        (it.meta.name || it.name).toLowerCase().includes(q)
+      )
       : data;
     render(filtered);
   });
@@ -69,5 +69,7 @@ function initBattlePanels(mountPoint = document.body) {
     btn.onclick = () => item.remove();
     item.append(span, btn);
     drop.appendChild(item);
+    createOrderPanel();
+    updateOrderPanel();
   });
 }
