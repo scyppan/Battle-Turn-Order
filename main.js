@@ -46,5 +46,5 @@ async function initapp(baseUrl, version) {
     await loadSnippets(baseUrl, version);
     characters = await fetchfresh(972);
     document.getElementById('char-count')?.remove();
-    initBattlePanels();
+    //initBattlePanels();
 }
