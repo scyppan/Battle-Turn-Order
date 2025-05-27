@@ -1,3 +1,13 @@
+let characters;
+
+const cssfiles = ['toppanels.css']
+const jsfiles = ['load.js', 'toppanels.js']
+// const htmlfiles  = [
+//   'intro','overview','attributes','rolling','abilities',
+//   'bloodstatus','development','characteristics',
+//   'parental','traits','skills', 'knowledge'
+// ]
+
 function loadAssets(baseUrl, version) {
   return new Promise((resolve, reject) => {
     const head = document.head;
