@@ -1,6 +1,6 @@
 let characters;
 
-const cssfiles = ['toppanels.css']
+const cssfiles = ['toppanels.css', 'bottompanel.css'];
 const jsfiles = ['load.js', 'toppanels.js', 'orderpanel.js', 'order.js'];
 // const htmlfiles  = [
 //   'intro','overview','attributes','rolling','abilities',
