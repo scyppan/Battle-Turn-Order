@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
   mainScript.src   = baseUrl + '@' + version + '/main.js'
   mainScript.defer = true
   mainScript.onload = function() {
-    initMain(baseUrl, version)
+    initapp(baseUrl, version)
   }
   document.head.appendChild(mainScript)
 })
