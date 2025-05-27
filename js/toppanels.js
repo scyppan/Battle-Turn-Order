@@ -66,7 +66,11 @@ function initBattlePanels(mountPoint = document.body) {
     const btn = document.createElement('button');
     btn.className = 'remove-btn';
     btn.textContent = '×';
-    btn.onclick = () => item.remove();
+    btn.onclick = () =>{
+      item.remove();
+      updateOrderPanel();
+    } 
+
     item.append(span, btn);
     drop.appendChild(item);
     createOrderPanel();

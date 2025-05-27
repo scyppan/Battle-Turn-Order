@@ -5,7 +5,7 @@ function createOrderPanel(mountPoint = document.body) {
   const panel = document.createElement('div');
   panel.id = 'order-panel';
   panel.className = 'panel';
-  const hdr = document.createElement('h3');
+  const hdr = document.createElement('h6');
   hdr.textContent = 'Order Panel';
   panel.appendChild(hdr);
   mountPoint.appendChild(panel);

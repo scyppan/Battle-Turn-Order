@@ -32,17 +32,21 @@ function updateOrderPanel() {
 
   const ul = document.createElement('ul');
   participants.forEach(p => {
-    const li = document.createElement('li');
-    li.className = 'order-item';
-    li.title = `${p.name}\nEminence: ${p.emin}\nBirthdate: ${p.day} ${p.month} ${p.year}`;
-    const label = document.createElement('div');
-    label.textContent = `${p.name} (${p.emin} | ${p.year})`;
-    const notes = document.createElement('textarea');
-    notes.className   = 'order-notes';
-    notes.placeholder = 'Notes…';
-    li.append(label, notes);
-    ul.append(li);
-  });
+  const li = document.createElement('li');
+  const nameDiv = document.createElement('div');
+  nameDiv.className = 'liname';
+  nameDiv.textContent = p.name;
+
+  const infoDiv = document.createElement('div');
+  infoDiv.textContent = `(${p.emin} | ${p.year})`;
+
+  const notes = document.createElement('textarea');
+  notes.className = 'order-notes';
+  notes.placeholder = 'Notes…';
+
+  li.append(nameDiv, infoDiv, notes);
+  ul.append(li);
+});
 
   window.orderPanel.appendChild(ul);
 }
