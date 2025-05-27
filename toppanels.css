@@ -1,0 +1,89 @@
+.panel-wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.panel {
+  flex: 1;
+  background: transparent;
+  border-color: 1px solid gray;
+  border-radius: 7px;
+  padding: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  color: #3c3c3c;
+  
+}
+
+#search-box {
+  width: 100%;
+  padding: 3px;
+  margin-bottom: 12px;
+  background: #b5dac7;           /* soft off-white */
+  border: 1px solid #dee2e6;
+  border-radius: 7px;
+  color: #3c3c3c;
+  box-sizing: border-box;
+}
+
+#left-panel ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  flex: 1;
+}
+
+#left-panel li {
+  padding: 3px;
+  margin-bottom: 3px;
+  border-radius: 12px;
+  background: #e0cece;           /* gentle pale grey */
+  cursor: grab;
+  transition: background 0.2s;
+  color: #3c3c3c;
+  font-size: 14px;
+}
+
+#left-panel li:hover {
+  background: #bea6a6;           /* muted hover tone */
+}
+
+#drop-area {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 7px;
+}
+
+.participant-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px;
+  margin-bottom: 3px;
+  border-radius: 12px;
+  background: #888561;
+  color: #e7e5da;
+  font-size: 14px;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 2px 4px;
+  color: #420a0a;
+}
+
+/* Battle Participants label */
+#right-panel h3 {
+  font-size: 14px;
+  background: #353636;           /* pale muted blue */
+  color: #d2d9e0;
+  padding: 4px 8px;
+  margin: 0 -8px 8px;
+  border-radius: 0 0 3px 3px;
+}
