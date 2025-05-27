@@ -71,4 +71,3 @@ function initBattlePanels(mountPoint = document.body) {
     drop.appendChild(item);
   });
 }
-
